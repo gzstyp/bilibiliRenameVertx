@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+/**统一表格的样式,用于对话框的添加|编辑或数据列表显示*/
+table.view,table.show {
+	border-collapse: collapse;
+	font-size: 14px;
+	text-align: center;
+	border:0px;
+}
+
+.view th,.show th {
+	padding-left:2px;
+	padding-right:1px;
+	padding-top:1px;
+	padding-bottom:1px;
+	border: 1px solid silver;
+	height: 30px;
+}
+
+.view td,.show td {
+	padding-left:2px;
+	padding-right:1px;
+	padding-top:1px;
+	padding-bottom:1px;
+	width: 80px;
+	border: 1px solid silver;
+	color: #383838;
+	height: 30px;
+}
+
+/**table-表头样式*/
+.view thead tr td,.show thead tr td{
+	background-color:#eee;
+	color: #000;
+}

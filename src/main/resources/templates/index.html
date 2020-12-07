@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/table.view.css">
+</head>
+<body>
+<p th:text="${name}"></p>
+<form method="post" action="/handle">
+  <table class="view">
+    <tr>
+      <td>路径:</td>
+      <td><input type="text" name="path" placeholder="文件夹路径"/></td>
+    </tr>
+    <tr>
+      <td>表达式:</td>
+      <td><input type="text" name="expression" placeholder="处理表达式"/></td>
+    </tr>
+    <tr>
+      <td>表达式:</td>
+      <td><input type="submit" value="提交" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
